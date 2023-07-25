@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+
+  telegrafCPU:
+    image: telegraf:1.24
+    container_name: TelegrafCPU
+    restart: always
+    hostname: localhost
+    volumes:
+      - ./data/telegrafCPU/telegraf.conf:/etc/telegraf/telegraf.conf 
